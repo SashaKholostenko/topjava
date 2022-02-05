@@ -3,8 +3,6 @@ package ru.javawebinar.topjava.model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Meal {
     private final LocalDateTime dateTime;
@@ -18,8 +16,6 @@ public class Meal {
         this.description = description;
         this.calories = calories;
     }
-
-
 
     public LocalDate getDate() {
                 return dateTime.toLocalDate();
@@ -39,14 +35,4 @@ public class Meal {
     public int getCalories() {
                 return calories;
             }
-
-
-
-    public Meal(String dateTime, int description, String calories) {
-        this.dateTime = LocalDateTime.parse(dateTime);
-        this.description = String.valueOf(description);
-        this.calories = Integer.parseInt(calories);
-    }
-
-
 }

@@ -7,30 +7,35 @@
 <h3><a href="index.html">Home</a></h3>
 <hr>
 <h2>Meals</h2>
+<table border="2px">
+  <c:forEach var="meals" items="${meals}">
 
-<div class="title">
-  <p><span class="pink">L</span>is of<span class="pink"S></span>tudents</p>
-</div>
-<table>
-  <thead>
-  <tr>
-    <th>#</th>
-    <th>First name</th>
-    <th>Second name</th>
-    <th>Group</th>
-    <th class="but"></th>
-  </tr>
-  </thead>
-  <tbody>
-  <c:forEach var="meals" items="${list}">
-    <td></td>
-    <td><strong></strong>${list.first_name}</td>
-    <td>${list.second_name}</td>
-    <td>${list.avg_mark}</td>
-    <td class="but" ><booton>Deleted</booton></td>
+
+    <c:if test="${meals.excess}">
+      <tr style="color: crimson">
+
+        <td>${meals.dateTime}</td>
+        <td>${meals.description}</td>
+        <td>${meals.calories}</td>
+        <td>${meals.excess}</td>
+
+      </tr>
+    </c:if>
+
+    <c:if test="${!meals.excess}">
+      <tr style="color: forestgreen">
+
+        <td>${meals.dateTime}</td>
+        <td>${meals.description}</td>
+        <td>${meals.calories}</td>
+        <td>${meals.excess}</td>
+
+      </tr>
+    </c:if>
+
+
+
   </c:forEach>
-  </tbody>
 </table>
-
 </body>
 </html>

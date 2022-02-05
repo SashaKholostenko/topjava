@@ -34,7 +34,6 @@
     </c:if>
 
 
-
   </c:forEach>
 </table>
 </body>

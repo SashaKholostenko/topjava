@@ -1,6 +1,8 @@
 package ru.javawebinar.topjava.model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MealTo {
     private final LocalDateTime dateTime;
@@ -28,7 +30,5 @@ public class MealTo {
                 '}';
     }
 
-    public void setExcess(boolean excess) {
-        this.excess = excess;
-    }
+
 }

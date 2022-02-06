@@ -12,31 +12,35 @@
     <table border = "0">
 
         <tr>
-            <td><b>Parameter1</b></td>
-            <td><input type = "text" name = "parameter1"
-                       value = "http://localhost/some-test-url" size = "70"/></td>
+            <td><b>Date Time:</b></td>
+            <td>
+            <input type="date" id="start" name="trip-start"
+                   value="yyy-mm-dd">
+            </td>
         </tr>
 
         <tr>
-            <td><b>Parameter2</b></td>
-            <td><input type = "text" name = "parameter2"
-                       value = "001" size = "65"/></td>
-        </tr>
-
-        <tr>
-            <td>Parameter choice</td>
+            <td><b>Description:</b></td>
             <td>
                 <select name = "possible-result">
-                    <option value = "SUCCESS">Success</option>
-                    <option value = "ERR-500">ERR-500 Technical error</option>
-                    <option value = "ERR-1003">ERR-1003 Requested information is not available</option>
-                    <option value = "ERR-1005">ERR-1005 Some other Error</option>
+                    <option value = "Понедельник">Понедельник</option>
+                    <option value = "Вторник">Вторник</option>
+                    <option value = "Среда">Среда</option>
+                    <option value = "Четверг">Четверг</option>
+                    <option value = "Пятница">Пятница</option>
+                    <option value = "Суббота">Суббота</option>
+                    <option value = "Воскресенье">Воскресенье</option>
                 </select>
             </td>
         </tr>
 
         <tr>
-            <td colspan = "2"><input type = "submit" value = "Start test"/></td>
+            <td><b>Calories</b></td>
+            <td><form><input type="number"></form></td>
+        </tr>
+
+        <tr>
+            <td colspan = "2"><input type = "submit" value = "Save" /> <input type = "submit" value = "Cancel"/></td>
         </tr>
     </table>
 </form>

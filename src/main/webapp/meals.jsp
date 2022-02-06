@@ -10,30 +10,14 @@
 <table border="2px">
   <c:forEach var="meals" items="${meals}">
 
+    <tr style="${meals.excess ? 'color: crimson' : 'color: forestgreen' }">
 
-    <c:if test="${meals.excess}">
-      <tr style="color: crimson">
+      <td>${meals.dateTime}</td>
+      <td>${meals.description}</td>
+      <td>${meals.calories}</td>
+      <td>${meals.excess}</td>
 
-        <td>${meals.dateTime}</td>
-        <td>${meals.description}</td>
-        <td>${meals.calories}</td>
-        <td>${meals.excess}</td>
-
-      </tr>
-    </c:if>
-
-    <c:if test="${!meals.excess}">
-      <tr style="color: forestgreen">
-
-        <td>${meals.dateTime}</td>
-        <td>${meals.description}</td>
-        <td>${meals.calories}</td>
-        <td>${meals.excess}</td>
-
-      </tr>
-    </c:if>
-
-
+    </tr>
   </c:forEach>
 </table>
 </body>

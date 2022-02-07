@@ -7,6 +7,7 @@
 <h3><a href="index.html">Home</a></h3>
 <hr>
 <h2>Meals</h2>
+<h4><a href="addMeal.jsp">add Meals</a></h4>
 <table border="2px">
   <c:forEach var="meals" items="${meals}">
 
